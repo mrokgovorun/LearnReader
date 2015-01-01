@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLearningContext"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TitlesWordsETC"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/linearTitleContext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/tvContextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Context" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbLearning"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearTitleContext"
+        android:progress="40" />
+
+    <LinearLayout
+        android:id="@+id/linearContext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pbLearning"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearContextQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/mainBackground"  >
+
+            <RelativeLayout
+                android:id="@+id/relativeContextQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/tvWordLang_2Context"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Some sentence from book with _____ space"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearContextAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/additionalBackground"
+            android:orientation="horizontal" 
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/linearContextAnswers"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:minWidth="200dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/relativeContextAnswer_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvContextAnswer_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/TitlesWordsETC"
+                        android:gravity="center|left"
+                        android:minWidth="215dp"
+                        android:text="Large Text  MainText"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeContextAnswer_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvContextAnswer_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/btnWrongAnswer"
+                        android:gravity="left|center"
+                        android:minWidth="215dp"
+                        android:text="Make invisible then wrong?"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeContextAnswer_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvContextAnswer_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/buttonPrime"
+                        android:gravity="center|left"
+                        android:minWidth="215dp"
+                        android:text="empty"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeContextAnswer_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvContextAnswer_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/TitlesWordsETC"
+                        android:gravity="center|left"
+                        android:minWidth="215dp"
+                        android:text="Not Middle Text"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContextNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"
+        android:text="->"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#E0E0E0" />
+
+</RelativeLayout>

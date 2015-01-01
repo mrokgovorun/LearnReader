@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeMagazinTable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground" >
+
+    <TextView
+        android:id="@+id/tvArticleShelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:text="@string/MagazineTable"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/linearSortingArticle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvArticleShelf" >
+
+        <Button
+            android:id="@+id/btnArticleShelfTheme"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:text="@string/Theme"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnArticleSite"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/buttonDisabled"
+            android:enabled="false"
+            android:maxHeight="48dp"
+            android:maxWidth="100dp"
+            android:minHeight="48dp"
+            android:minWidth="100dp"
+            android:text="@string/Site"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnArticleTime"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:minWidth="100dp"
+            android:text="@string/TimeAdding"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnArticleComplexity"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:minWidth="100dp"
+            android:text="@string/Complexity"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnArticleAlphabetic"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:minWidth="100dp"
+            android:text="@string/alphabetical"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollAllShelfArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomSetOfArticle"
+        android:layout_below="@+id/linearSortingArticle" >
+
+        <TableLayout
+            android:id="@+id/tableShelfArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp" >
+
+            <TextView
+                android:id="@+id/textArticleAutoGenRow_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Witcher"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollArticleAutoGen_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp" >
+
+                <LinearLayout
+                    android:id="@+id/linearArticleAGinScroll_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnAGArticle_1"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="Title" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_2"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="of" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_3"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="sorted" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_4"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="books." />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_5"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="for" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_6"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="exampel" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_7"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="by" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textArticleAutoGenRow_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Game of Thrones"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollArticleAutoGen_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@id/linearArticleAGinScroll_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnAGArticle_8"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="series" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_9"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="and" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_10"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="numb" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_11"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="of" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_12"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="book" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_13"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="in" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_14"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="the" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textArticleAutoGenRow_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Wheel of time"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollArticleAutoGen_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@id/linearArticleAGinScroll_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnAGArticle_15"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="series." />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_16"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="Every" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_17"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="shelf" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_18"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="it&apos;s" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_19"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="seria" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_20"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="or" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textArticleAutoGenRow_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Android Development"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollArticleAutoGen_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@id/linearArticleAGinScroll_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnAGArticle_21"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="author." />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_22"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="Or" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_23"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="every" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_24"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="first" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_25"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="letter" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_26"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="of" />
+
+                    <Button
+                        android:id="@+id/btnAGArticle_27"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="books" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/linearMagazinTableSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomSetOfArticle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ibtnLeftArticle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:contentDescription="@string/ShelfRight"
+            android:src="@drawable/abc_switch_thumb_material" />
+
+        <ImageButton
+            android:id="@+id/ibtnCenterArticle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:contentDescription="@string/ShelfRight"
+            android:src="@android:drawable/ic_dialog_dialer" />
+
+        <ImageButton
+            android:id="@+id/ibtnRightArticle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:contentDescription="@string/ShelfRight"
+            android:src="@drawable/abc_switch_thumb_material" />
+    </LinearLayout>
+
+</RelativeLayout>

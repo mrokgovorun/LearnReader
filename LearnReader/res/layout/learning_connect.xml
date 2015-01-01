@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLearningConnect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/linearTitleConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/tvConnectTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connectTwoParts" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbLearning"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearTitleConnect"
+        android:progress="40"/>
+
+    <LinearLayout
+        android:id="@+id/linearConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pbLearning"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearConnectQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/mainBackground" >
+
+            <RelativeLayout
+                android:id="@+id/relativeConnectQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tvConnectQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="словарь"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearConnectAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/additionalBackground"
+            android:orientation="horizontal" 
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/linearConnectAnswers_1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:minWidth="200dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/relativeConnectAnswer_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvConnectAnswer_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/TitlesWordsETC"
+                        android:gravity="center"
+                        android:minWidth="105dp"
+                        android:text="1 Start" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeConnectAnswer_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvConnectAnswer_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/buttonPrime"
+                        android:gravity="center"
+                        android:minWidth="105dp"
+                        android:text="dicti" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeConnectAnswer_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvConnectAnswer_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/TitlesWordsETC"
+                        android:gravity="center"
+                        android:minWidth="105dp"
+                        android:text="4 End" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeConnectAnswer_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvConnectAnswer_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/buttonPrime"
+                        android:gravity="center"
+                        android:minWidth="105dp"
+                        android:text="onary" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearConnectAnswers_2"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/relativeConnectAnswer_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvConnectAnswer_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/btnWrongAnswer"
+                        android:gravity="center"
+                        android:minWidth="105dp"
+                        android:text="2 Start" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeConnectAnswer_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvConnectAnswer_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/TitlesWordsETC"
+                        android:gravity="center"
+                        android:minWidth="105dp"
+                        android:text="4 Start" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeConnectAnswer_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvConnectAnswer_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/TitlesWordsETC"
+                        android:gravity="center"
+                        android:minWidth="105dp"
+                        android:text="1 End" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeConnectAnswer_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvConnectAnswer_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/TitlesWordsETC"
+                        android:gravity="center"
+                        android:minWidth="105dp"
+                        android:text="2 End" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvChooseLang_1Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"
+        android:text="->"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#E0E0E0" />
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLearningChooseLang_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/linearTitleChooseLang_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:id="@+id/tvChooseLang_2Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ChooseWordOnLang_2" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbLearning"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="40" />
+
+    <LinearLayout
+        android:id="@+id/linearChooseLang_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pbLearning"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearChooseLang_2Question"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeChooseLang_2Question"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mainBackground" >
+
+                <TextView
+                    android:id="@+id/tvWordLang_1ChooseLang_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Word Lang first"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearChooseLang_2Answer"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/additionalBackground"
+            android:orientation="horizontal"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:id="@+id/linearChooseLang_2Answers"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:minWidth="200dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/relativeChooseLang_2Answer_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvChooseLang_2Answer_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/btnWrongAnswer"
+                        android:gravity="center|left"
+                        android:minWidth="215dp"
+                        android:text="Make invisible then wrong?"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeChooseLang_2Answer_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvChooseLang_2Answer_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/TitlesWordsETC"
+                        android:gravity="left|center"
+                        android:minWidth="215dp"
+                        android:text="Small text"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeChooseLang_2Answer_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvChooseLang_2Answer_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/buttonPrime"
+                        android:gravity="center|left"
+                        android:minWidth="215dp"
+                        android:text="Word lang second"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeChooseLang_2Answer_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tvChooseLang_2Answer_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/TitlesWordsETC"
+                        android:gravity="center|left"
+                        android:minWidth="215dp"
+                        android:text="Not Middle Text"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvChooseLang_2Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"
+        android:text="->"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#E0E0E0" />
+
+</RelativeLayout>

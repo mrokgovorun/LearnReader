@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/tabMainScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/buttonPrime" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/relativeActivityLibrary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TabHost
+                        android:id="@+id/tabFavorite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TabWidget
+                                android:id="@android:id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="3dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@color/transparent"
+                                android:gravity="fill_horizontal|center_vertical|bottom" >
+                            </TabWidget>
+
+                            <FrameLayout
+                                android:id="@android:id/tabcontent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                
+                                <RelativeLayout
+                                    android:id="@+id/relativeLibraryFavoriteArticles"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3dp" >
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" >
+
+                                        <RelativeLayout
+                                            android:id="@+id/relativeLibraryAddArticles"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentTop="true" >
+
+                                            <ImageButton
+                                                android:id="@+id/ibtnMagazineTable"
+                                                android:layout_width="48dp"
+                                                android:layout_height="48dp"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_margin="3dp"
+                                                android:background="@color/buttonPrime"
+                                                android:src="@android:drawable/arrow_down_float" />
+
+                                            <TextView
+                                                android:id="@+id/tvLibraryArticles"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginLeft="16dp"
+                                                android:layout_toLeftOf="@+id/ibtnMagazineTable"
+                                                android:text="@string/Articles"
+                                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                                        </RelativeLayout>
+
+                                        <HorizontalScrollView
+                                            android:id="@+id/scrollFavoriteArticles"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="true" >
+
+                                            <LinearLayout
+                                                android:id="@+id/linearFavoriteArticlesIn"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal" >
+
+                                                <Button
+                                                    android:id="@+id/genericDict_2"
+                                                    android:layout_width="80dp"
+                                                    android:layout_height="100dp"
+                                                    android:layout_margin="3dp"
+                                                    android:background="@color/additionalBackground"
+                                                    android:text="@string/TitleOfArticles" />
+
+                                                <Button
+                                                    android:id="@+id/genericDict_3"
+                                                    android:layout_width="80dp"
+                                                    android:layout_height="100dp"
+                                                    android:layout_margin="3dp"
+                                                    android:background="@color/additionalBackground"
+                                                    android:text="@string/TitleOfArticles" />
+
+                                                <Button
+                                                    android:id="@+id/genericDict_07"
+                                                    android:layout_width="80dp"
+                                                    android:layout_height="100dp"
+                                                    android:layout_margin="3dp"
+                                                    android:background="@color/additionalBackground"
+                                                    android:text="@string/TitleOfArticles" />
+
+                                                <Button
+                                                    android:id="@+id/genericDict_04"
+                                                    android:layout_width="80dp"
+                                                    android:layout_height="100dp"
+                                                    android:layout_margin="3dp"
+                                                    android:background="@color/additionalBackground"
+                                                    android:text="@string/TitleOfArticles" />
+
+                                                <Button
+                                                    android:id="@+id/genericDict_06"
+                                                    android:layout_width="80dp"
+                                                    android:layout_height="100dp"
+                                                    android:layout_margin="3dp"
+                                                    android:background="@color/additionalBackground"
+                                                    android:text="@string/TitleOfArticles" />
+                                            </LinearLayout>
+                                        </HorizontalScrollView>
+                                    </RelativeLayout>
+                                </RelativeLayout>
+
+                            <ScrollView                                
+                                android:id="@+id/relativeLibrary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" >
+
+        <RelativeLayout android:id="@+id/relativeLibraryBooks" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <RelativeLayout android:id="@+id/relativeLibraryBookRecent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+
+                <Button android:id="@+id/btnRecentBooksLR" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/mainBackground" android:drawableRight="@drawable/ic_action_expand" android:gravity="center_vertical|center_horizontal|left" android:paddingLeft="16dp" android:paddingRight="16dp" android:text="@string/RecentlyReaded" />
+
+                <LinearLayout android:id="@+id/linearRecentBooksIn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/btnRecentBooksLR" android:layout_centerHorizontal="true" android:orientation="horizontal">
+
+                    <Button android:id="@+id/BookRecent_1" android:layout_width="100dp" android:layout_height="162dp" android:layout_margin="3dp" android:background="@drawable/button_normal" android:text="@string/TitleOfArticles" />
+
+                    <Button android:id="@+id/BookRecent_2" android:layout_width="100dp" android:layout_height="162dp" android:layout_margin="3dp" android:background="@color/additionalBackground" android:text="@string/TitleOfArticles" />
+
+                    <Button android:id="@+id/BookRecent_3" android:layout_width="100dp" android:layout_height="162dp" android:layout_margin="3dp" android:background="@color/additionalBackground" android:text="@string/TitleOfArticles" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/relativeLibraryBookFavorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/relativeLibraryBookRecent">
+                
+                <Button android:id="@+id/btnFavoritesBooksLR" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/mainBackground" android:drawableRight="@drawable/ic_action_expand" android:gravity="center_vertical|center_horizontal|left" android:paddingLeft="16dp" android:paddingRight="16dp" android:text="@string/Favorites" />
+                <LinearLayout android:id="@+id/linearFavoriteBooksIn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/btnFavoritesBooksLR" android:layout_centerHorizontal="true" android:orientation="horizontal">
+
+                    <Button android:id="@+id/BookFavorite_1" android:layout_width="100dp" android:layout_height="162dp" android:layout_margin="3dp" android:background="@drawable/button_normal" android:text="@string/TitleOfArticles" />
+
+                    <Button android:id="@+id/BookFavorite_2" android:layout_width="100dp" android:layout_height="162dp" android:layout_margin="3dp" android:background="@color/additionalBackground" android:text="@string/TitleOfArticles" />
+
+                    <Button android:id="@+id/BookFavorite_3" android:layout_width="100dp" android:layout_height="162dp" android:layout_margin="3dp" android:background="@color/additionalBackground" android:text="@string/TitleOfArticles" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView></FrameLayout>
+                        </LinearLayout>
+                    </TabHost>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLearning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/mainBackground" >
+
+                    <TabHost
+                        android:id="@+id/tabLearning"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TabWidget
+                                android:id="@android:id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="51dp"
+                                android:layout_marginRight="51dp"
+                                android:layout_marginTop="3dp" >
+
+                            </TabWidget>
+
+                            <FrameLayout
+                                android:id="@android:id/tabcontent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <RelativeLayout
+                                    android:id="@+id/relativeLearningLessons"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                    <Button
+        android:id="@+id/btnPrimaryLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#4CAF50"
+        android:text="10" />
+
+    <TextView
+        android:id="@+id/tvPrimoryLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnPrimaryLesson"
+        android:layout_alignBottom="@+id/btnPrimaryLesson"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="@string/MainLesson"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnRandomLesson"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/btnPrimaryLesson"
+        android:layout_gravity="bottom"
+        android:layout_margin="3dp"
+        android:background="#80CBC4"
+        android:text="@string/RandomLesson" />
+
+    <LinearLayout
+        android:id="@+id/linearLessons"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/btnRandomLesson"        
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLessonColumn_1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center|left"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnWriting"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="@string/Writing" />
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="@string/Connect" />
+
+            <Button
+                android:id="@+id/btnChooseLang_2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="@string/ChooseTranslate" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLessonColumn_2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center|right"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnCard"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="@string/Card" />
+
+            <Button
+                android:id="@+id/btnContext"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="@string/Context" />
+
+            <Button
+                android:id="@+id/btnChooseLang_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="@string/ChooseWord" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/relativeLearningStatistics"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                </RelativeLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </TabHost>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeDictionary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/mainBackground"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/relativeDictBySource"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/generalTab_1" >
+
+                        <TextView
+                            android:id="@+id/btnDictBySource"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toLeftOf="@+id/ibtnAllDictBySource"
+                            android:text="@string/DictionaryBySource"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <ImageButton
+                            android:id="@+id/ibtnAllDictBySource"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="3dp"
+                            android:background="@color/buttonPrime"
+                            android:src="@android:drawable/arrow_down_float" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearVocabulary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/linearColumnOfDict_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:id="@+id/btnWordsToKnow"
+                                android:layout_width="fill_parent"
+                                android:layout_height="95dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/additionalBackground"
+                                android:minHeight="95dp"
+                                android:text="@string/wordsToKnow" />
+
+                            <Button
+                                android:id="@+id/btnIdiomsToKnow"
+                                android:layout_width="fill_parent"
+                                android:layout_height="95dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/additionalBackground"
+                                android:minHeight="95dp"
+                                android:text="@string/idiomsToKnow" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearColumnOfDict_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:id="@+id/btnLearnedWords"
+                                android:layout_width="fill_parent"
+                                android:layout_height="95dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/additionalBackground"
+                                android:minHeight="95dp"
+                                android:text="@string/learnedWords" />
+
+                            <Button
+                                android:id="@+id/btnLearnedIdioms"
+                                android:layout_width="fill_parent"
+                                android:layout_height="95dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/additionalBackground"
+                                android:text="@string/learnedIdioms" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnVocabulary"
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:layout_above="@id/linearVocabulary"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="@string/vocabulary" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollDictBySource"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeDictBySource" >
+
+                        <LinearLayout
+                            android:id="@+id/linearScrollDictBySource"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/button01"
+                                android:layout_width="80dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/additionalBackground"
+                                android:text="Title" />
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="80dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/additionalBackground"
+                                android:text="Title" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="80dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/additionalBackground"
+                                android:text="Title" />
+
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="80dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/additionalBackground"
+                                android:text="Title" />
+
+                            <Button
+                                android:id="@+id/button5"
+                                android:layout_width="80dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/additionalBackground"
+                                android:text="Title" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

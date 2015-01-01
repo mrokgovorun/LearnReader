@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLearning"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD" >
+
+    <Button
+        android:id="@+id/btnPrimaryLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#4CAF50"
+        android:text="10" />
+
+    <TextView
+        android:id="@+id/tvPrimoryLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnPrimaryLesson"
+        android:layout_alignBottom="@+id/btnPrimaryLesson"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="@string/MainLesson"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnRandomLesson"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/btnPrimaryLesson"
+        android:layout_gravity="bottom"
+        android:layout_margin="3dp"
+        android:background="#80CBC4"
+        android:text="@string/RandomLesson" />
+
+    <LinearLayout
+        android:id="@+id/linearLessons"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/btnRandomLesson"        
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLessonColumn_1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center|left"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnWriting"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="@string/Writing" />
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="@string/Connect" />
+
+            <Button
+                android:id="@+id/btnChooseLang_2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="@string/ChooseTranslate" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLessonColumn_2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center|right"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnCard"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="@string/Card" />
+
+            <Button
+                android:id="@+id/btnContext"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="@string/Context" />
+
+            <Button
+                android:id="@+id/btnChooseLang_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="@string/ChooseWord" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+

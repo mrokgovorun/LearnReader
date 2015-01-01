@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeActivityLibrary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/generalTab_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnLibrary_3"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonDisabled"
+            android:enabled="false"
+            android:text="@string/Library" />
+
+        <Button
+            android:id="@+id/btnLearning_3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:longClickable="false"
+            android:text="@string/Learning"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnDictionary_3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:text="@string/Dictionary" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/generalTab_1"
+        android:background="@color/mainBackground" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLibraryFavoritArticles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLibraryAddArticles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/scrollFavoriteArticles" >
+
+                <ImageButton
+                    android:id="@+id/ibtnMagazineTable"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="3dp"
+                    android:background="@color/buttonPrime"
+                    android:src="@android:drawable/arrow_down_float" />
+
+                <TextView
+                    android:id="@+id/tvLibraryArticles"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@+id/ibtnMagazineTable"
+                    android:text="@string/Articles"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/scrollFavoriteArticles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+                <LinearLayout
+                    android:id="@+id/linearFavoriteArticlesIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/genericDict_2"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="@string/TitleOfArticles" />
+
+                    <Button
+                        android:id="@+id/genericDict_3"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="@string/TitleOfArticles" />
+
+                    <Button
+                        android:id="@+id/genericDict_7"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="@string/TitleOfArticles" />
+
+                    <Button
+                        android:id="@+id/genericDict_4"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="@string/TitleOfArticles" />
+
+                    <Button
+                        android:id="@+id/genericDict_6"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:background="@color/additionalBackground"
+                        android:text="@string/TitleOfArticles" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

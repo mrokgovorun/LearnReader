@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeWizard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground" >
+
+    <LinearLayout
+        android:id="@+id/linearNativeLanguegeHead"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvNativeLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="@string/yourNativeLanguage"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearNativeLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linearNativeLanguegeHead"
+        android:gravity="top|clip_vertical"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:id="@+id/scrollNativeLanguage"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:maxHeight="150dp"
+            android:minHeight="50dp" >
+
+            <TableLayout
+                android:id="@+id/tableNative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableNativeRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btnWizardLang1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/buttonPressed"
+                        android:text="@string/Russian" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableNativeRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btnWizardLang2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/additionalBackground"
+                        android:text="@string/English" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableNativeRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btnWizardLang3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/additionalBackground"
+                        android:text="@string/France" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableNativeRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btnWizardLang4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/additionalBackground"
+                        android:text="@string/Germany" />
+
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearWizardLang_2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linearNativeLanguage"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvWizardLang_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/learningLanguage"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearWizardLang_2"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:id="@+id/scrollLang_2Languagies"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:id="@+id/tableWizardLang_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:id="@+id/tableLearningRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/secondLang1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/additionalBackground"
+                        android:text="@string/Russian" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableLearningRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/secondLang2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/buttonPressed"
+                        android:text="@string/English" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableLearningRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/secondLang3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/additionalBackground"
+                        android:text="@string/France" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableLearningRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/secondLang4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/additionalBackground"
+                        android:text="@string/Germany" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearWizardSett"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ibtnWizardLeft"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:maxHeight="60dp"
+            android:minHeight="60dp"
+            android:src="@drawable/abc_switch_thumb_material" />
+
+        <ImageButton
+            android:id="@+id/btnWizardSave"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:src="@android:drawable/ic_menu_save" />
+
+        <ImageButton
+            android:id="@+id/ibtnWizardRight"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:maxHeight="60dp"
+            android:minHeight="60dp"
+            android:src="@drawable/abc_switch_thumb_material" />
+
+    </LinearLayout>
+
+</RelativeLayout>

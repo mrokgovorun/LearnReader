@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="buttonPrime">#4CAF50</color>
+    <color name="buttonPressed">#81C784</color>
+    <color name="mainBackground">#E3F2FD</color>
+    <color name="additionalBackground">#80CBC4</color>
+    <color name="buttonDisabled">#A5D6A7</color>
+    <color name="TitlesWordsETC">#fff</color>
+    <color name="textHintOnTE">#CFD8DC</color>
+    <color name="textMain">#000</color>
+    <color name="transparent">#00000000</color>
+    <color name="btnWrongAnswer">#F44336</color>
+    <color name="blue">#2196F3</color>
+    
+</resources>

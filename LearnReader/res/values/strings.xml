@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VocaReader</string>
+    <string name="Articles">Articles</string><string name="yourNativeLanguage">Your native language</string><string name="Library">Reading</string>
+    <string name="Learning">Learning</string><string name="Series">Series</string><string name="Dictionary">Dictionary</string><string name="Books">Books</string><string name="Russian">Русский</string>
+    <string name="English">English</string>
+    <string name="France">France</string>
+    <string name="Germany">Germany</string>
+    <string name="learningLanguage">Learning language</string>
+    <string name="OK">OK</string>
+    <string name="Hint_1">В первую очередь нужно создать словарь для изучения. Для этого добавьте источник новых слов и просто читайте. Нажимайте на незнакомые слова и получайте перевод.  Постепенно будет собираться множество новых слов для изучения. По началу выбeрите книгу поменьше, а лучше читайте статьи в интернете. </string>
+    <string name="Hint_2">При выборе языка для изучения который является родным, вы можете просто читать художественные книги и сложную техническую литературу. Встречая новые слова, можно нажимать на них и добавлять в словарь изучаемых слов. А также сохроняемый контекст позволит лучше запомнить смысл слова. </string>
+    <string name="Hint_3">При выборе любого иностранного языка, будет создан отдельный профиль с вашими книгами и словарями. Встречая незнакомые слова в тексте, их можно будет добавлять в словарь изучаемых слов одним нажатием. </string>
+    
+    
+    
+    
+    
+    <string name="TitleOfBook">Title</string>
+    <string name="TitleOfArticles">Title</string>
+    <string name="AllBooks">All books</string>
+    <string name="AllArticles">All Articles</string>
+    
+    <string name="Rating">Rate</string>
+    <string name="Author">Author</string>
+    <string name="alphabetical">ABC</string>
+    <string name="BookShelf">Book Shelf</string>
+    <string name="ShelfRight">For something</string>
+    <string name="Genre">Genre</string>
+    <string name="CheckAllWords">Check all words 1190</string>
+    <string name="LearnUnknownWords">Learn unknown 320</string>
+    <string name="BooksAdding">Choose folder with books</string>
+    <string name="editWeb">Type or paste web address here</string>
+    <string name="Or">Or</string>
+    <string name="ChooseCategories">Choose categories</string>
+    <string name="AddArticle">Add Article</string>
+    <string name="AddArticleFromPhone">Add from phone</string>
+    <string name="MagazineTable">Magazines table</string>
+    <string name="Theme">Theme</string>
+    <string name="Site">Site</string>
+    <string name="Complexity">Hard</string>
+    <string name="TimeAdding">Time</string>
+    <string name="Context">Context</string>
+    <string name="MainLesson">Everyday lesson</string>
+    <string name="RandomLesson">Random lesson</string>
+    <string name="Writing">Writing</string>
+    <string name="Connect">Connect</string>
+    <string name="ChooseTranslate">Choose Translate</string>
+    <string name="ChooseWord">Choose a word</string>
+    <string name="WriteLang_2">Write an answer</string>
+    <string name="ChooseWordOnLang_2">Choose word on Lang_2</string>
+    <string name="connectTwoParts">Connect two parts</string>
+    <string name="ChooseWordOnLang_1">Choose word on Lang_1</string>
+    <string name="Card">Card</string>
+    <string name="doYouRememberCard">Do you remember?</string>
+    <string name="DictionaryBySource">Dictionaries by source</string>
+    <string name="plugInTranslater">Plug in translater</string>
+    <string name="vocabulary">Vocabulary</string>
+    <string name="wordsToKnow">Words to know</string>
+    <string name="learnedWords">Learned Words</string>
+    <string name="idiomsToKnow">Idioms to know</string>
+    <string name="learnedIdioms">Learned idioms</string>
+    <string name="prepareToPrint">Prepare to print</string>
+    <string name="partOfSpeech">Part of speech</string>
+    <string name="transcription">Transcription</string>
+    <string name="favotitestab">favoritestab</string>
+    <string name="ABHint">Hint</string>
+    <string name="ABMenu">Menu</string>
+    <string name="Lessons">Lessons</string>
+    <string name="Statistics">Statistics</string>
+    <string name="RecentlyReaded">Recent</string>
+    <string name="Favorites">Favorites</string>
+
+</resources>

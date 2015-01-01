@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/realtiveExport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground" >
+
+    <LinearLayout
+        android:id="@+id/linearExportAB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50" >
+
+        <ImageButton
+            android:id="@+id/ibtnExpordSidePanel"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="74.17"
+            android:background="@color/transparent"
+            android:src="@android:drawable/ic_menu_sort_by_size" />
+
+        <TextView
+            android:id="@+id/tvTitleExport"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="100"
+            android:gravity="center_vertical"
+            android:text="@string/prepareToPrint" />
+
+        <ImageButton
+            android:id="@+id/ibtnExportSave"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@android:drawable/ic_menu_save" />
+
+        <ImageButton
+            android:id="@+id/ibtnExportShare"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@android:drawable/ic_menu_share" />
+
+        <ImageButton
+            android:id="@+id/ibtnExportMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvExportColumns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Пример форматирования со столбцами. Их можно выделять и менять местами." />
+
+    <RelativeLayout
+        android:id="@+id/relativeExportSidePanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearExportAB" >
+
+        <LinearLayout
+            android:id="@+id/linearExportColumn_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnExportLang_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/additionalBackground"
+                android:text="Lang_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearExportColumn_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearExportColumn_1" >
+
+            <Button
+                android:id="@+id/btnExportContext"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/additionalBackground"
+                android:text="@string/Context" />
+
+            <Button
+                android:id="@+id/btnExportTranscription"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/additionalBackground"
+                android:text="@string/transcription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearExportColumn_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearExportColumn_2" >
+
+            <Button
+                android:id="@+id/btnExportPartOfSpeech"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/additionalBackground"
+                android:text="@string/partOfSpeech" />
+
+            <Button
+                android:id="@+id/btnExportLang_2"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/additionalBackground"
+                android:text="Lang_1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearExportFormating"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/btnExportFontUp"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:text="Aa"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnExportFontDown"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:text="aA"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnExportBold"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:text="Bold"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnExportItalic"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:text="italic"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnExportUnderline"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:text="Underline"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLearningCard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/linearTitleCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/tvCardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Card" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbLearning"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:progress="40" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pbLearning" >
+
+        <RelativeLayout
+            android:id="@+id/relativeCardQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/mainBackground" >
+
+            <TextView
+                android:id="@+id/tvCardWordLang_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Word Lang second"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeCardAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeCardQuestion"
+            android:background="@color/additionalBackground" >
+
+            <LinearLayout
+                android:id="@+id/linearCardAnswer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+                <Button
+                    android:id="@+id/btnCardNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="NO" />
+
+                <Button
+                    android:id="@+id/btnCardYes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@color/buttonPrime"
+                    android:text="yes!"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearCardHint"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp" >
+
+                <TextView
+                    android:id="@+id/tvCardHint"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/doYouRememberCard"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

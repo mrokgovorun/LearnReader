@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/realtiveDOpened"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground" >
+
+    <LinearLayout
+        android:id="@+id/linearDOpenedAB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonPrime" >
+
+        <TextView
+            android:id="@+id/tvTitleDOpened"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="100"
+            android:gravity="center"
+            android:text="Dictionary: learning words/title of source" />
+
+        <ImageButton
+            android:id="@+id/ibtnDOpenedDelete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@android:drawable/ic_menu_delete" />
+
+        <ImageButton
+            android:id="@+id/ibtnPrint"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@android:drawable/ic_menu_agenda" />
+
+        <ImageButton
+            android:id="@+id/ibtnDOpenedMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="Список с подробностями" />
+
+</RelativeLayout>

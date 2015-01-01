@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeBooksAdd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground" >
+
+    <LinearLayout
+        android:id="@+id/linearTitleBooksAdding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" 
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvBooksAdding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="@string/BooksAdding"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/textMain" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/ScrollFilePath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/linearTitleBooksAdding" >
+
+        <LinearLayout
+            android:id="@+id/linearFilePath"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ibtnPathDirectory"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:background="@color/buttonPrime"
+                android:src="@android:drawable/stat_notify_sdcard" />
+
+            <Button
+                android:id="@+id/btnPathFolder_1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:background="@color/buttonPrime"
+                android:text="Documents"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btnPathFolder_2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:background="@color/buttonPrime"
+                android:text="Books"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollFiles"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/ScrollFilePath" >
+
+        <LinearLayout
+            android:id="@+id/linearFiles"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearFile_2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:background="#E0E0E0" >
+
+                <Button
+                    android:id="@+id/btnFolder_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/additionalBackground"
+                    android:gravity="left"
+                    android:maxHeight="45dp"
+                    android:minHeight="45dp"
+                    android:text="Folder name"
+                    android:textColor="@color/textMain" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearFile_1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:background="@color/TitlesWordsETC" >
+
+                <TextView
+                    android:id="@+id/tvFile_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/linearFile_2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:background="@color/TitlesWordsETC" >
+
+                <TextView
+                    android:id="@+id/tvFile_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/ibtnPathBack"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/ScrollFilePath"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ScrollFilePath"
+        android:layout_margin="2dp"
+        android:background="@color/buttonPrime"
+        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+    <LinearLayout
+        android:id="@+id/linearAddBooksBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ibtnSavePath"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:maxHeight="60dp"
+            android:minHeight="60dp"
+            android:src="@android:drawable/ic_menu_save" />
+
+        <ImageButton
+            android:id="@+id/ibtnBuyBooks"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:maxHeight="60dp"
+            android:minHeight="60dp"
+            android:src="@android:drawable/ic_menu_upload" />
+
+    </LinearLayout>
+
+</RelativeLayout>

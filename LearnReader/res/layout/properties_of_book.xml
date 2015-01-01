@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeProperties"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground" >
+
+    <RelativeLayout
+        android:id="@+id/relativePropertiesTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/relativePictureOfBook"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp" >
+
+            <ImageButton
+                android:id="@+id/ibtnPictureOfBook"
+                android:layout_width="240dp"
+                android:layout_height="300dp"
+                android:layout_margin="3dp"
+                android:background="@color/additionalBackground"
+                android:fadingEdge="horizontal"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearBookActs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/relativePictureOfBook"
+            android:layout_alignTop="@id/relativePictureOfBook"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/relativePictureOfBook"
+            android:layout_weight="0"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btnFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/buttonPrime"
+                android:src="@android:drawable/star_big_on" />
+
+            <ImageButton
+                android:id="@+id/btnRead"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/buttonPrime"
+                android:src="@android:drawable/ic_media_play" />
+
+            <ImageButton
+                android:id="@+id/btnAudioRead"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/buttonPrime"
+                android:src="@android:drawable/ic_menu_slideshow"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/btnBookmarks"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/buttonPrime"
+                android:src="@android:drawable/ic_input_get" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearBookBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/relativePropertiesTop"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearPropertiesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="10" >
+
+            <RelativeLayout
+                android:id="@+id/relativePropertiesTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="10" >
+
+                <TextView
+                    android:id="@+id/tvPropertiesNumb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:text="#13"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvPropertiesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Gathering storm"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearPropertiesBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearPrepareToRead"
+            android:layout_below="@+id/tvFile_1"
+            android:layout_weight="70"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearPropertiesAuthorIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvPropertiesAuthor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Author"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textHintOnTE" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPropertiesName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvPropertiesName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="Robert Jordan"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearPropertiesSeries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearPropertiesSeriaIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvPropertiesSeria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Series"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textHintOnTE" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPropertiesSeriaTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvPropertiesSeriaTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="Wheel of time"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearPropertiesGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearPropertiesGenreIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvPropertiesGenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Genre"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textHintOnTE" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPropertiesGenreTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.25"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvPropertiesGenreTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="Fantasy, detective, humor"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearPrepareToRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="2dp"
+        android:layout_weight="20"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPropertiesCheckAll"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="40"
+            android:background="@color/buttonPrime"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:text="@string/CheckAllWords"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/ivPropertiesLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="20"
+            android:background="@color/buttonPrime"
+            android:focusable="true"
+            android:src="@drawable/ic_launcher" />
+
+        <Button
+            android:id="@+id/btnPropertiesLearnUnknown"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="40"
+            android:background="@color/buttonPrime"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/LearnUnknownWords"
+            android:textColor="#000"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>

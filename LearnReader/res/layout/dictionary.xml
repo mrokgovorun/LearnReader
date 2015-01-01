@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeDictionary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/generalTab_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnLibrary_5"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:enabled="true"
+            android:text="@string/Library" />
+
+        <Button
+            android:id="@+id/btnLearning_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/buttonPrime"
+            android:text="@string/Learning" />
+
+        <Button
+            android:id="@+id/btnDictionary_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonPressed"
+            android:enabled="false"
+            android:text="@string/Dictionary" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeDictBySource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generalTab_1" >
+
+        <TextView
+            android:id="@+id/btnDictBySource"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@+id/ibtnAllDictBySource"
+            android:text="@string/DictionaryBySource"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageButton
+            android:id="@+id/ibtnAllDictBySource"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:background="@color/buttonPrime"
+            android:src="@android:drawable/arrow_down_float" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearVocabulary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:id="@+id/linearColumnOfDict_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnWordsToKnow"
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:layout_margin="3dp"
+                android:background="@color/additionalBackground"
+                android:minHeight="95dp"
+                android:text="@string/wordsToKnow" />
+
+            <Button
+                android:id="@+id/btnIdiomsToKnow"
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:layout_margin="3dp"
+                android:background="@color/additionalBackground"
+                android:minHeight="95dp"
+                android:text="@string/idiomsToKnow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearColumnOfDict_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnLearnedWords"
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:layout_margin="3dp"
+                android:background="@color/additionalBackground"
+                android:minHeight="95dp"
+                android:text="@string/learnedWords" />
+
+            <Button
+                android:id="@+id/btnLearnedIdioms"
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:layout_margin="3dp"
+                android:background="@color/additionalBackground"
+                android:text="@string/learnedIdioms" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVocabulary"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_above="@id/linearVocabulary"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3dp"
+        android:background="@color/additionalBackground"
+        android:text="@string/vocabulary" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollDictBySource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeDictBySource" >
+
+        <LinearLayout
+            android:id="@+id/linearScrollDictBySource"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="3dp"
+                android:background="@color/additionalBackground"
+                android:text="Title" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="3dp"
+                android:background="@color/additionalBackground"
+                android:text="Title" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="3dp"
+                android:background="@color/additionalBackground"
+                android:text="Title" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="3dp"
+                android:background="@color/additionalBackground"
+                android:text="Title" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="3dp"
+                android:background="@color/additionalBackground"
+                android:text="Title" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

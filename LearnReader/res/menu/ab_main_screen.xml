@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/ABmainHint" 
+        android:showAsAction="always" 
+        android:icon="@android:drawable/ic_dialog_info"         
+        android:title="@string/ABHint">
+        
+    </item>
+    <item 
+        android:id="@+id/ABMainMenu" 
+        android:title="@string/ABMenu" 
+        android:icon="@android:drawable/ic_menu_manage"
+        android:showAsAction="always">
+        
+    </item>
+    
+
+</menu>
