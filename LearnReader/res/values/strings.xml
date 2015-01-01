@@ -39,7 +39,7 @@
     <string name="MagazineTable">Magazines table</string>
     <string name="Theme">Theme</string>
     <string name="Site">Site</string>
-    <string name="Complexity">Hard</string>
+    <string name="Difficult">Difficult</string>
     <string name="TimeAdding">Time</string>
     <string name="Context">Context</string>
     <string name="MainLesson">Everyday lesson</string>
@@ -71,5 +71,7 @@
     <string name="Statistics">Statistics</string>
     <string name="RecentlyReaded">Recent</string>
     <string name="Favorites">Favorites</string>
+    <string name="Easy">Easy</string>
+    <string name="Hard">Hard</string>
 
 </resources>

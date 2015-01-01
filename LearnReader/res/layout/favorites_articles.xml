@@ -1,8 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FavoriteArticles" >
+    <ScrollView
+        android:id="@+id/scrollLibraryArticles"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
 
-</RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeLibraryArticles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnRecentArticlesLR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mainBackground"
+                android:drawableRight="@drawable/ic_action_expand"
+                android:gravity="center_vertical|center_horizontal|left"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/RecentlyReaded" />
+
+                <HorizontalScrollView
+                    android:id="@+id/scrollRecentArticle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnRecentArticlesLR" >
+
+                    <LinearLayout
+                        android:id="@+id/linearRecentArticlesIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/ArticleRecent_1"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/button_normal"
+                            android:text="@string/TitleOfArticles" />
+
+                        <Button
+                            android:id="@+id/ArticleRecent_2"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/additionalBackground"
+                            android:text="@string/TitleOfArticles" />
+
+                        <Button
+                            android:id="@+id/ArticleRecent_3"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/additionalBackground"
+                            android:text="@string/TitleOfArticles" />
+                        
+                        <Button
+                            android:id="@+id/ArticleRecent_4"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/additionalBackground"
+                            android:text="@string/TitleOfArticles" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            
+            <Button
+                android:id="@+id/btnFavoritesArticlesLR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollRecentArticle"
+                android:background="@color/mainBackground"
+                android:drawableRight="@drawable/ic_action_expand"
+                android:gravity="center_vertical|center_horizontal|left"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/Favorites" />
+                        
+                <HorizontalScrollView
+                    android:id="@+id/scrollFavotiteArticle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnFavoritesArticlesLR" >
+
+                    <LinearLayout
+                        android:id="@+id/linearFavoritesArticlesIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/ArticleFavorite_1"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/button_normal"
+                            android:text="@string/TitleOfArticles" />
+
+                        <Button
+                            android:id="@+id/ArticleFavorite_2"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/additionalBackground"
+                            android:text="@string/TitleOfArticles" />
+
+                        <Button
+                            android:id="@+id/ArticleFavorite_3"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/additionalBackground"
+                            android:text="@string/TitleOfArticles" />
+                        
+                        <Button
+                            android:id="@+id/ArticleFavorite_4"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/additionalBackground"
+                            android:text="@string/TitleOfArticles" />
+                    </LinearLayout>
+                </HorizontalScrollView>           
+            
+            <Button
+                android:id="@+id/btnHardArticlesLR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollFavotiteArticle"
+                android:background="@color/mainBackground"
+                android:drawableRight="@drawable/ic_action_expand"
+                android:gravity="center_vertical|center_horizontal|left"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/Hard" />
+            
+                <HorizontalScrollView
+                    android:id="@+id/scrollHardArticle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnHardArticlesLR" >
+
+                    <LinearLayout
+                        android:id="@+id/linearHardArticlesIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/ArticleHard_1"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/button_normal"
+                            android:text="@string/TitleOfArticles" />
+
+                        <Button
+                            android:id="@+id/ArticleHard_2"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/additionalBackground"
+                            android:text="@string/TitleOfArticles" />
+
+                        <Button
+                            android:id="@+id/ArticleHard_3"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/additionalBackground"
+                            android:text="@string/TitleOfArticles" />
+                        
+                        <Button
+                            android:id="@+id/ArticleHard_4"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/additionalBackground"
+                            android:text="@string/TitleOfArticles" />
+                    </LinearLayout>
+                </HorizontalScrollView>            
+            
+            <Button
+                android:id="@+id/btnEasyArticlesLR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollHardArticle"
+                android:background="@color/mainBackground"
+                android:drawableRight="@drawable/ic_action_expand"
+                android:gravity="center_vertical|center_horizontal|left"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/Easy" />
+                        
+                <HorizontalScrollView
+                    android:id="@+id/scrollEasyArticle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnEasyArticlesLR" >
+
+                    <LinearLayout
+                        android:id="@+id/linearEasyArticlesIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/ArticleEasy_1"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/button_normal"
+                            android:text="@string/TitleOfArticles" />
+
+                        <Button
+                            android:id="@+id/ArticleEasy_2"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/additionalBackground"
+                            android:text="@string/TitleOfArticles" />
+
+                        <Button
+                            android:id="@+id/ArticleEasy_3"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/additionalBackground"
+                            android:text="@string/TitleOfArticles" />
+                        
+                        <Button
+                            android:id="@+id/ArticleEasy_4"
+                            android:layout_width="100dp"
+                            android:layout_height="162dp"
+                            android:layout_margin="3dp"
+                            android:background="@color/additionalBackground"
+                            android:text="@string/TitleOfArticles" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            
+        
+
+        </RelativeLayout>
+
+	</ScrollView>
